@@ -1,0 +1,4 @@
+<div *ngFor="let post of posts | async">
+  <h2 routerLink="{{post.id}}">{{post.Title}}</h2>
+  <p>{{post.Content}}</p>
+</div>
