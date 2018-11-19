@@ -13,12 +13,12 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [ SharedModule, RouterModule.forChild(routes)
-  
-  ],
-  declarations: [PostDashboardComponent, PostDetailComponent, PostListComponent]
+  imports: [ SharedModule, RouterModule.forChild(routes)],
+  declarations: [PostDashboardComponent, PostDetailComponent, PostListComponent],
+
+  providers: [PostService]
 })
 
-providers: [PostService]
+
 
 export class PostsModule { }

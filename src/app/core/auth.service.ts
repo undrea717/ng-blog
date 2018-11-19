@@ -4,7 +4,7 @@ import * as firebase from 'firebase/app'
 
 @Injectable()
 export class AuthService {
-//  authState: any = null
+ authState: any = null
 
   constructor(public afAuth: AngularFireAuth) {
    this.afAuth.authState.subscribe(data => this.authState = data)
