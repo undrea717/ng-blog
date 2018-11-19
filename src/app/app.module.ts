@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { PostsModule } from './posts/posts.module';
+import { RoutingModule } from './routing.module'
 
 const routes: Routes = [
   {path: '', redirectTo: '/blog', pathMatch: 'full'},
@@ -35,6 +36,7 @@ const routes: Routes = [
     SharedModule,
     PostsModule,
     RouterModule.forRoot(routes),
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

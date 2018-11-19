@@ -4,6 +4,7 @@ import { PostDashboardComponent } from './post-dashboard/post-dashboard.componen
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { SharedModule } from '../shared/shared.module';
+import { PostService } from './post.service'
 
 const routes: Routes = [
   { path: 'blog', component: PostListComponent },
@@ -17,4 +18,7 @@ const routes: Routes = [
   ],
   declarations: [PostDashboardComponent, PostDetailComponent, PostListComponent]
 })
+
+providers: [PostService]
+
 export class PostsModule { }
